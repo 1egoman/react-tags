@@ -21,6 +21,7 @@
   "license": "MIT",
   "repository": "https://github.com/prakhar1989/react-tags",
   "dependencies": {
+    "color-hash": "^1.0.3",
     "lodash.flow": "^3.3.0",
     "react-dnd": "^2.0.2",
     "react-dnd-html5-backend": "^2.0.0"
