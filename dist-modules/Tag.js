@@ -105,9 +105,13 @@ var Tag = function (_Component) {
           );
         }
       });
+
+      var textColor = colorHasher.hsl(label)[2] > 0.5;
+      console.log(textColor);
+
       var tagComponent = _react2.default.createElement(
         'span',
-        { style: { opacity: isDragging ? 0 : 1, background: colorHasher.hex(label) }, className: props.classNames.tag },
+        { style: { opacity: isDragging ? 0 : 1, background: colorHasher.hex(label) }, className: props.classNames.tag + ' ' + (textColor ? 'black' : 'white') },
         label,
         _react2.default.createElement(RemoveComponent, { className: props.classNames.remove, onClick: props.onDelete })
       );
