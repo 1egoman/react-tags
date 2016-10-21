@@ -107,7 +107,6 @@ var Tag = function (_Component) {
       });
 
       var textColor = colorHasher.hsl(label)[2] > 0.5;
-      console.log(textColor);
 
       var tagComponent = _react2.default.createElement(
         'span',
